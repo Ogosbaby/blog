@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Birdeye</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-color: #f5f5f5;
+        --text-color: #000000;
+        --secondary-color: #19162e;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      body {
+        background-color: var(--primary-color);
+        font-family: "Poppins", sans-serif;
+        color: var(--text-color);
+        letter-spacing: 1px;
+        margin: 0 5%;
+
+        transition: background-color 0.25s, color 0.25s;
+      }
+      /* Nav bar */
+      header {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 32px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+      header.shadow {
+        background-color: var(--secondary-color);
+        padding: 50px 32px;
+        transition: 0.4s;
+        box-shadow: 0 1px 4px hsl(0 4% 14%/10%);
+      }
+      .menu-icon .bx-menu {
+        font-size: 30px;
+        line-height: 80px;
+        cursor: pointer;
+        display: none;
+        float: right;
+        margin-right: 40px;
+        color: white;
+      }
+      .logo{
+        display: block;
+        margin: 0 auto;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: 0.8rem;
+      }
+      .logo span {
+        color: rgb(0, 255, 242);
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav ul {
+        margin-right: 10px;
+      }
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 20px;
+      }
+      .nav-btn {
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+      }
+      .nav-btn a {
+        color: var(--text-color);
+        font-size: 1.05rem;
+      }
+      .nav-btn:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        background-color: #f5f5f5c7;
+      }
+      .container {
+        display: block;
+        width: 60%;
+        margin: 20% auto;
+      }
+      .container h2{
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+        text-align: center;
+      }
+      .container input:not([type="submit"]) {
+        padding: 10px;
+        width: 94%;
+        margin-bottom: 20px;
+      }
+      .container textarea{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 1.05rem;
+    }
+        .container input[type="submit"]{
+ display: block;
+ position: relative;
+ left: 89%;
+ background-color: var(--secondary-color);
+ color: #fff;
+ font-size: 1.02rem;
+ padding: 0.8rem;
+ border-radius: 10px;
+ border: none;
+}
+.container input[type="submit"]:hover{
+padding: 0.9rem;
+background-color: var(--secondary-color);
+color: #fff;
+transition: 0.3s;
+}
+input[type="submit"][value="SIGN UP"]:active{
+color: orange;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><a href="index.html">Birdeye</a></h1>
+      <div class="menu-icon">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+          <span
+            ><h2>Want to publish an article?</h2>
+            <label for="name"
+              >Name:
+            </label>
+            <input type="text" name="name" id="name" required/>
+            <textarea name="" id="" rows="10" cols="50" id="textarea">Hello, Birdeye...</textarea>
+            <input type="submit" value="Submit" id="submit" onclick="myFunction()"
+          /></span>
+      </div>
+    </section>
+    <script>
+        function myFunction() {
+            var txt = "";
+            if (document.getElementById("name") && document.getElementById("textarea") !== null || document.getElementById("name") && document.getElementsById("textarea") !== "" ) {
+               txt = "Message submitted successfully";
+            }}
+        </script>
+  </body>
+</html>

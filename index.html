@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdeye</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html">Birdeye</a></h1>
+        <div class="menu-icon">
+            <i class="bx bx-menu"></i>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown" >
+                <li class="dropdown-list"><a id="dropdown-list" href="#" onclick="myFunction()">Categories</a>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/signup.html" class="dropdown-category">Sports</a>
+                    <a href="/signup.html" class="dropdown-category">Food</a>
+                    <a href="/signup.html" class="dropdown-category">Entertainment</a>
+                    <a href="/signup.html" class="dropdown-category">Tech</a>
+
+                  </div>
+                </li>
+                </div>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            <li class="nav-btn"><a href ="/signup.html" id="nav-btn">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">Popular Articles</span>
+        <span class="filter-item" data-filter="sport">Sport</span>
+        <span class="filter-item" data-filter="food">Food</span>
+        <span class="filter-item" data-filter="entertainment">Entertainment</span>
+        <span class="filter-item" data-filter="tech">Tech</span>
+     </div>
+     <section class="post container">
+        <div class="card tech" for="post-one">
+            <img src="https://th.bing.com/th/id/OIP.WCqK6XavZC3o_vWbiDsfxQHaE8?rs=1&pid=ImgDetMain" alt="AI in hand" class="post-img">
+            <p class="category">Tech</p>
+            <h2 class="post-title"><a id="post-one" href="post-content/postpage.html">AI: Prompt Engineering</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">In the future, there might be people whose job is just to write these prompts. They’ll be really good at talking to AI and getting it to do amazing things.</p>
+        </div>
+        <div class="card entertainment">
+            <img src="https://th.bing.com/th/id/OIP.0gUMsYosSTuS7D7Us00O3gAAAA?rs=1&pid=ImgDetMain" alt="Ayra Starr" class="post-img">
+            <p class="category">Entertainment</p>
+            <h2 class="post-title"><a href="/post-content/postpage2.html">Ayra Starr releases sophomore album <em>The Year I turned 21</em></a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">Ayra Starr has once again wowed us with her amazing vocals. We'd be review this songs track by track<p>
+        </div>
+        <div class="card sport">
+            <img src="https://th.bing.com/th/id/OIP.PIVAByb9gtCAwdPlA9cC0AHaE7?rs=1&pid=ImgDetMain" alt="" class="post-img">
+            <p class="category">Sport</p>
+            <h2 class="post-title"><a href="/post-content/postpage3.html">Cristiano Ronaldo scores STUNNING left-footed brace</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">In the 50th minute, the 39-year-old collected the ball on the right side before cutting in, throwing in some stepovers and unleashing an unstoppable effort into the top-left corner of the Ireland goal.
+
+                .</p>
+        </div>
+        <div class="card food">
+            <img src="https://th.bing.com/th/id/R.c96c89a1f9c1c340582db8e9c221e081?rik=sjvawwA7yX1dRw&pid=ImgRaw&r=0" alt="" class="post-img">
+            <p class="category">Food</p>
+            <h2 class="post-title"><a href="/post-content/postpage4.html">How to Make Egusi Soup</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">Egusi Soup, also known as melon seed soup, is a staple in Nigerian and Ghanaian cuisine. Made from ground melon seeds, this rich and hearty soup is packed with flavor and nutrients. Whether you’re a seasoned cook or a beginner, follow these simple steps to create a mouthwatering bowl of Egusi Soup.</p>
+        </div>
+        <div class="card entertainment">
+            <img src="https://th.bing.com/th/id/OIP.TUIu_fQEI3Ycra2PJIeBbwHaEh?rs=1&pid=ImgDetMain" alt="" class="post-img">
+            <p class="category">Entertainment</p>
+            <h2 class="post-title"><a href="/post-content/postpage5.html">All we know about the album <em>Eternal Sunshine</em></a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">In the future, there might be people whose job is just to write these prompts. They’ll be really good at talking to AI and getting it to do amazing things.</p>
+        </div>
+        <div class="card sport">
+            <img src="https://th.bing.com/th/id/OIP.869rO8252F8rxmW4hqdUCQHaE6?rs=1&pid=ImgDetMain" alt="" class="post-img">
+            <p class="category">Sport</p>
+            <h2 class="post-title"><a href="/post-content/postpage6.html">Super Eagles set to “do the impossible” for 2026 World Cup ticket</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">In the future, there might be people whose job is just to write these prompts. They’ll be really good at talking to AI and getting it to do amazing things.</p>
+        </div>
+        <div class="card food">
+            <img src="https://th.bing.com/th/id/OIP.9t16RBCYQu4BjN6Q_kL1HAHaC_?rs=1&pid=ImgDetMain" alt="" class="post-img">
+            <p class="category">Food</p>
+            <h2 class="post-title"><a href="/post-content/postpage7.html">21 Nigerian Foods With High Calories</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">Why you mmay not be achieve your body goals</div>
+        <div class="card entertainment">
+            <img src="https://th.bing.com/th/id/OIP.ahPmTEbtzheEEIFLcom95gHaLG?rs=1&pid=ImgDetMain" alt="" class="post-img">
+            <p class="category">Entertainment</p>
+            <h2 class="post-title"><a href="/post-content/postpage8.html">Tems’ “Born In The Wild” is Finally Here and it’s A Celebration of Vulnerability</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">In the future, there might be people whose job is just to write these prompts. They’ll be really good at talking to AI and getting it to do amazing things.</p>
+        </div>
+        <div class="card tech">
+            <img src="https://th.bing.com/th/id/OIG4.8eBOvOgntoVC_s8xYBNy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="" class="post-img">
+            <p class="category">Tech</p>
+            <h2 class="post-title"><a href="/post-content/postpage9.html">Quantum Leaps and Neural Nets</a></h2>
+            <p class="post-date">31 MAY, 2024</p>
+            <p class="post-description">This title suggests an intriguing intersection of quantum computing and neural networks. In recent years, the combination of these fields has led to the development of quantum neural networks (QNNs), which explore the potential of quantum computing in solving complex problems that challenge classical neural networks</p>
+        </div>
+     </section>
+    </main>
+    <footer class="footer container">
+        <p>&#169; MayWorld All Rights Reserved</p>
+        <div class="social"><p>Visit our socials:</p>
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></i></a>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
